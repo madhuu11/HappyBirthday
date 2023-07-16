@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "newcomen-1","newcomen-2", Impact, Sans-Serif;
+    height: 100%;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.banner .content{
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40%;
+}
+
+.banner .content p{
+    margin: 0;
+    padding: 20;
+    font-size: 4.5em;
+    text-transform: uppercase;
+    /* color: black; */
+    color: azure;
+    font-size: 80px;
+    text-shadow: 3px 5px #000000;
+    animation: snake;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes snake{
+    100%{transform: translateY(-30px);}
+}
+p span:nth-child(1){
+    animation-delay: 1s;
+}
